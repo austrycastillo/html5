@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CONTACTO</h1>
+        <nav>
+            <a href="index.html">inicio</a>
+            <a href="nosotros.html">nosotros</a>
+            <a href="servicios.html">servicios</a>
+            <a href="contacto.html">contacto</a>
+            <a href="practica1.html">practica1</a>
+            <a href="practica2.html">practica2</a>
+            <a href="https://www.google.com/" target="_blank" title="google">google</a>
+            <a href="#abajo">Bajar 👇</a>
+            <a href="mailto:austry.castillo@educacionit.com">enviar correo</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de html5:</h2>
+            <div class="cajitaForm">
+                <!--
+                    métodos:
+                    -get: enviar la información a través de la url
+                    -post: enviar oculta
+                -->
+                <form action="procesar.php" method="post" id="form" title="form" enctype="multipart/form-data">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre, ej: Juan" maxlength="15"
+                        minlength="3" required name="nombre" class="inputA">
+                    <label for="email">Email:</label>
+                    <input type="mail" class="inputA" id="email" placeholder="Ej: correo@web.com" name="email"
+                        class="inputA">
+                    <label for="edad">Edad:</label>
+                    <input type="number" min="5" max="10" id="edad" name="edad" class="inputA">
+                    <label for="">Password</label>
+                    <input type="password" class="inputA">
+                    <label for="">Color</label>
+                    <input type="color">
+                    <input type="hidden" name="secreto" value="150">
+                    <label for="">Sexo:</label>
+                    <input type="radio" name="sexo" checked value="femenino">femenino
+                    <input type="radio" name="sexo" value="masculino">masculino
+                    <input type="radio" name="sexo" value="nop">prefiero no decir
+                    <label for="">Día disponible:</label>
+                    <input type="checkbox" name="lunes">lunes
+                    <input type="checkbox" name="martes">martes
+                    <input type="checkbox" name="miercoles">miércoles
+                    <input type="checkbox" name="jueves">jueves
+                    <input type="checkbox" name="viernes">viernes
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" class="inputB"></textarea>
+                    <label for="listado">Listado:</label>
+                    <select name="listado" id="listado" class="inputC">
+                        <option>mouse</option>
+                        <option value="mf">microfono</option>
+                        <option>teclado</option>
+                    </select>
+                    <label for="foto"></label>
+                    <input type="file" id="foto" name="foto">
+                    <label for=""></label>
+                    <input type="submit" value="Enviar info" class="inputD">
+                    <!-- <button>enviar</button> -->
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
